@@ -1,4 +1,4 @@
-import express from "express";
+import type { Request, Response } from "express"; // Importera som typer
 import { getAllProducts, getProductById } from "../models/product-model.ts";
 
 // Controller för att hämta alla produkter
