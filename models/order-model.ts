@@ -48,7 +48,7 @@ export const createOrder = async (order: OrderInput): Promise<number> => {
 
 export const getOrders = async (): Promise<OrderRow[]> => {
   const sql = `
-    SELECT id, customer_first_name, customer_last_name, customer_address, customer_city, customer_postcode, customer_phone, customer_email, order_items, order_total, subject_id, created_at 
+    SELECT id, customer_first_name, customer_last_name, customer_address, customer_city, customer_postcode, customer_phone, customer_email, order_items, order_total, created_at 
     FROM orders 
     ORDER BY created_at DESC
   `;
